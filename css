@@ -1,0 +1,109 @@
+body {
+    font-family: 'Arial', sans-serif; /* lettertype familie*/
+    background-color: #fff9db; /* kleur achtergrond */
+    color: #8d6e29; /* kleur voor tekst */
+    padding: 20px; /* ruimte voor de content en de border*/
+    display: flex; /* makkelijke manier om te ordenen van internet gehaald*/
+    flex-direction:column; /*knoppen achter elkaar*/
+    min-height: 100vh;/* 100vh betekent dat een element de volledige hoogte van de viewport inneemt*/
+}
+h1, h2, h3 {
+    color: #b07c2b; /*kleur voor koppen */
+    text-align: center;
+}
+.card {
+    background-color: #fff; /* Witte achtergrond voor contrast */
+    border: 2px solid #ffcc00; /* Gele rand */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.navbar {
+    background-color: #d09b46; /* Donkergeel achtergrond */
+    padding: 15px;
+    text-align: center; /* Centreer de links */
+    border-radius: 10px; /* Hoekjes afronden */
+    margin-bottom: 20px;
+}
+.navbar a {
+    color: #fff; /* Witte tekstkleur */
+    text-decoration: none; /* Geen onderstreping */
+    padding: 10px 20px; /* Ruimte rond de tekst */
+    margin: 0 10px; /* Ruimte tussen de links */
+    border-radius: 5px; /* Hoekjes van de links afronden */
+    transition: background-color 0.3s ease; /* Voor een vloeiende overgang */
+}
+.navbar a:hover {
+    background-color: #ffcc00; 
+    color: #8d6e29;
+}
+.episode-list {
+    background-color: #fff; /* Witte achtergrond */
+    border: 2px solid #b07c2b; /* dunne rand om de box*/
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Schaduw voor diepte */
+}
+.episode-list h1 {
+    color: #b07c2b; /*andere kleur titel */
+}
+.episode-list ul {
+    list-style-type: none; /* Geen opsomming */
+}
+.episode-list li {
+    padding: 10px 0; /* Ruimte rond elke aflevering */
+    border-bottom: 1px solid #e0e0e0; /* scheiding tussen afleveringen */
+    transition: background-color 0.3s ease; /* Voor overgang */
+}
+.episode-list li:hover {
+    background-color: #ffcc00; /* achtergrondkleur als je muis er over gaat*/
+    color: #8d6e29; /* tekstkleur */
+}
+.episode-list a:focus { /*dit werkt niet*/
+    color: gainsboro;
+    background-color: grey;
+}
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #b07c2b; /* Donkergeel voor de footer */
+    color: #fff;
+    margin-top: auto; /* Zorgt ervoor dat de footer altijd onderaan staat */
+}
+.contact-container {
+    background-color: #fff8e1; /* Zacht geel voor contrast */
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+}
+.contact-info p {
+    font-size: 1.1em;/* lettergrootte */
+    margin: 15px; /* buitenste rand hoeveel pixels */
+}
+.contact-info a {
+    color: #d32f2f; /* Rode kleur voor de links */
+    font-weight: bold; /* dikgedrukt */
+}
+.contact-info a:hover {
+    color: #f57c00; /* kleur als je met de muis over email en telefoon gaat*/
+    text-decoration: underline; /* lijntje onder de tekst bij contact als je met de muis dr over gaat */
+}
+.logo {
+    width: 100px; /* Breedte logo */
+    height: auto; /* normale verhoudingen */
+    margin-bottom: 20px; /* buitenste aan de onderkant*/
+}
+.small-image {
+    width: 200px; /* geprobeerd tot ik tevreden was */
+    height: auto; /* normale verhoudingen  */
+    align-items: flex-end;
+}
+/* Beweging met muis over het logo */
+.logo:hover {
+    transform: scale(1.2) rotate(10deg); /* Vergroot en schuin g*/
+}
+
